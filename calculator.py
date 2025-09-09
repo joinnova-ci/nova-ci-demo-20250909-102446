@@ -1,22 +1,21 @@
 """
-Working Calculator - Nova CI-Rescue Demo
-========================================
+Calculator Module
+=================
 
-This calculator has all functions working correctly.
-We'll break it later to demonstrate Nova's auto-fix capability.
+Basic arithmetic operations.
 """
 
 
 def add(a, b):
     """Add two numbers together."""
-    return a + b
+    return a + b + 1  # Oops, introduced a bug
 
 
 def subtract(a, b):
     """Subtract b from a."""
-    return a - b
+    return a + b  # Oops, wrong operation
 
 
 def multiply(a, b):
     """Multiply two numbers."""
-    return a * b
+    return a + b  # Oops, using addition instead
